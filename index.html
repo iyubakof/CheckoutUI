@@ -1,0 +1,121 @@
+<!DOCType html>
+<html>
+
+<head>
+    <title>Mobile Card Checkout UI</title>
+    <link rel='stylesheet' href="style.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- main box-->
+    <div class="main-div">
+        <!-- navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a href="#" class="navbar-brand"><img src="https://image.flaticon.com/icons/svg/472/472560.svg" width="35"
+                    height="35"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"><span class="navbar-toggler-icon"
+                    data-target="navbarNavItems" aria-controls="navbarNavItems" aria-expanded="false"
+                    aria-label="Toggle navigation"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNavItems">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link disabled" href="#">Customer Info</a>
+                    <a class="nav-item nav-link disabled" href="#">Shipping Info</a>
+                    <a class="nav-item nav-link active" href="#">Payment Info</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- pay methods -->
+        <div class="container saved-cards card">
+            <h4 class="card-title">Payment Methods</h4>
+            <br>
+            <div class="row container">
+                <div class="card1 card offset-sm-1 col-sm-5">
+                    <div class="row">
+                        <div class="offset-xs-1 col-sm-2">
+                            <img src="https://image.flaticon.com/icons/svg/196/196578.svg" width="30" height="30">
+                        </div>
+                    </div>
+                    <p class="card-label">CARD NUMBER</p>
+                    <p class="card-num">**** **** **** 1234</p>
+                    <p class="text-right card-label">EXP DATE</p>
+                    <p class="exp-date text-right">05/22</p>
+                    <p class="card-label text-right">CARDHOLDER NAME</p>
+                    <p class="holder-name text-right">Anhayla Grace</p>
+                </div>
+                <div class="card2 card offset-sm-1 col-sm-5">
+                    <img src="https://image.flaticon.com/icons/svg/196/196561.svg" width="30" height="30">
+                    <p class="card-label">CARD NUMBER</p>
+                    <p class="card-num">**** **** **** 9876</p>
+                    <p class="text-right card-label">EXP DATE</p>
+                    <p class="exp-date text-right">10/23</p>
+                    <p class="card-label text-right">CARDHOLDER NAME</p>
+                    <p class="holder-name text-right">Daina Jackson</p>
+                </div>
+            </div>
+            <br>
+            <div class="button-group pay-buttons" role="group">
+                <button class="btn btn-secondary pay-options">New Card</button>
+                <button class="btn btn-secondary pay-options"><img
+                        src="https://image.flaticon.com/icons/svg/174/174861.svg" width="40"></button>
+                <button class="btn btn-secondary pay-options"><img
+                        src="https://image.flaticon.com/icons/svg/152/152752.svg" width="40"></button>
+                <button class="btn btn-secondary pay-options">
+                    <img src="https://image.flaticon.com/icons/svg/281/281764.svg" width="40">
+                </button>
+            </div>
+            <br>
+        </div>
+        <br>
+
+        <!-- payment info -->
+        <div class="card container pay-info">
+            <h4 class="card-title">Payment Details</h4>
+            <br>
+            <form class="pay-form">
+                <div class="form-group">
+                    <label for="cardnumberInput">Card Number</label>
+                    <input type="text" value="5208 4920 3409 1234" id="cardnumberInput" class="form-control"></input>
+                </div>
+                <div class="form-group">
+                    <label for="cardholderInput">Cardholder</label>
+                    <input type="text" value="Anhayla Grace" id="cardholderInput" class="form-control"></input>
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-4">
+                        <label for="cvcInput">CVC</label>
+                        <input type="text" id="cvcInput" class="form-control"></input>
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label for="expMonthInput">Expiration Month</label>
+                        <input type="text" value="05" id="expMonthInput" class="form-control"></input>
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label for="expYearInput">Expiration Year</label>
+                        <input type="text" value="2022" id="expYearInput" class="form-control"></input>
+                    </div>
+                </div>
+                <p class="text-center pay-total">Payment total: $67.98</p>
+                <p class="text-center pay-sub">including taxes</p>
+                <button type="submit" class="btn container pay-btn">Pay</button>
+            </form>
+            <br>
+        </div>
+        <br>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
